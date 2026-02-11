@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            background-image: url(/assests/background.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class="px-[10%]" background="">
+    <header class="flex justify-between  py-5">
+
+        <div class="w-9">
+            <a href="/Portofolio.html">
+                <svg class="w-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <mask id="cutout">
+                            <!-- White = visible -->
+                            <rect width="100" height="100" fill="white" />
+
+                            <!-- Black = transparent (the A hole) -->
+                            <text x="50" y="68" text-anchor="middle" font-size="70" font-weight="700"
+                                font-family="Arial, Helvetica, sans-serif" fill="black">A</text>
+                        </mask>
+                    </defs>
+
+                    <!-- Black box with A punched out -->
+                    <rect width="100" height="100" fill="black" mask="url(#cutout)" rx="12" />
+                </svg>
+            </a>
+        </div>
+        <!-- <button class="w-9  ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-full">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
+        </button> -->
+    </header>
+    <section class="py-24 ">
+        <div>
+            <span class="block  pb-5 text-3xl">
+                <span class="text-emerald-600">Amr's</span> Portfolio</span>
+            <span class="text-lg ">
+                A section of my work, experience & knowledge
+            </span>
+        </div>
+    </section>
+    <section>
+        <span class="py-4 block">FEATURED</span>
+        <hr class="h-0.5 border-0 bg-gray-200 ">
+        <div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 py-8">
+                <div class="w-full  ">
+                    <img class="rounded-xl w-full" src="/assests/airline.png" alt="">
+                </div>
+                <div class="md:col-span-2">
+                    <span class="font-semibold  text-xl block">Airline Company Website</span>
+                    <span>Implemented a web application using MERN stack through which individuals can reserve and pay
+                        for flights to travel to different countries and sometimes domestic cities.</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 py-8">
+                <div class="w-full  ">
+                    <img class="rounded-xl w-full" src="/assests/Escape-Room.jfif" alt="">
+                </div>
+                <div class="md:col-span-2">
+                    <span class="font-semibold  text-xl block">Escape Room Game</span>
+                    <span>The game consists of 2 levels were the player needs to collect items from each level to get to
+                        the next one. We implemented first person camera and a third person camera, animation for each
+                        object. Also, we 3D modelled all the objects we used to implement the game using C++.</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 py-8">
+                <div class="w-full  ">
+                    <img class="rounded-xl w-full" src="/assests/book_liabrary.png" alt="">
+                </div>
+                <div class="md:col-span-2">
+                    <span class="font-semibold  text-xl block">Book Database Website</span>
+                    <span>Used NodeJS + Express to develop the website, allowing navigation between pages and storing
+                        information in JSON files and user login/registration using JavaScript and HTML.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
